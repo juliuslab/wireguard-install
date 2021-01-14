@@ -1,3 +1,11 @@
+#MTU-Setting 
+MTU is the abbreviation for 'Maximum Transfer Unit', i. e. the largest possible data packet that a client can completely send to a specific server. As a result, an MTU value can be defined.
+
+Configure the MTU-Value on client-site/config: 
+[Interface]
+MTU = 1300
+
+
 # WireGuard installer
 
 ![Lint](https://github.com/angristan/wireguard-install/workflows/Lint/badge.svg)
@@ -36,11 +44,3 @@ It will install WireGuard (kernel module and tools) on the server, configure it,
 
 Run the script again to add or remove clients!
 
-## Providers
-
-I recommend these cheap cloud providers for your VPN server:
-
-- [Vultr](https://goo.gl/Xyd1Sc): Worldwide locations, IPv6 support, starting at \$3.50/month
-- [Hetzner](https://hetzner.cloud/?ref=ywtlvZsjgeDq): Germany and Finland, IPv6, 20 TB of traffic, starting at €3/month
-- [Digital Ocean](https://goo.gl/qXrNLK): Worldwide locations, IPv6 support, starting at \$5/month
-- [PulseHeberg](https://goo.gl/76yqW5): France, unlimited bandwidth, starting at €3/month
